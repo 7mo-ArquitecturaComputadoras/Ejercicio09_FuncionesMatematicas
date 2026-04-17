@@ -1,7 +1,9 @@
 #include <iostream>
 
 using namespace std;
-extern "C" double MiPow(double x, double y);
+extern "C" double Mi_pow(double x, double y);
+extern "C" double Mi_sqrt(double x);
+extern "C" double Mi_fact(double x);
 
 int main() {
     double x, y, r;
@@ -15,9 +17,16 @@ int main() {
     cout << "Ingresa Y: ";
     cin >> y;
 
-    r = MiPow(x, y);
+    r = Mi_pow(x, y);
 
-    cout << "\nEl resultado de " << x << " elevado a " << y << " es: " << r << endl;
+    cout << "\npow( " << x << " , " << y << " ) = " << r << endl;
 
+    r = Mi_sqrt(x);
+
+    cout << "\nsqrt( " << x << " ) = " << r << endl;
+
+    r = Mi_fact(x);
+
+    cout << "\nfact( " << x << " ) = " << r << endl;
     return 0;
 }
