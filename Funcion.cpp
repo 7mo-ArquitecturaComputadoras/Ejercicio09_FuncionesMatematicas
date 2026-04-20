@@ -1,3 +1,8 @@
+// ============================================================
+// Autor: Edson Joel Carrera Avila
+// Funcion.cpp
+// ============================================================
+
 #include <iostream>
 
 using namespace std;
